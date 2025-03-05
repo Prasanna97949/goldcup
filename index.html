@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>GoldCup</title>
+    <style>
+        .sticky-nav {
+            transition: background-color 0.3s ease-in-out, padding 0.3s;
+        }
+        .slide {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .active {
+            opacity: 1;
+        }
+        .spin-in {
+            animation: spin-in 1s ease-out;
+        }
+        @keyframes spin-in {
+            from {
+                transform: rotate(-180deg) scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: rotate(0deg) scale(1);
+                opacity: 1;
+            }
+        }
+        .text-fade {
+            animation: text-fade 1s ease-out;
+        }
+        @keyframes text-fade {
+            from {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        /* Wave-like entrance animation */
+        .product-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1.5s ease, transform 1.0s ease;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Hover effect */
+        .product-card:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 p-4 transition-all duration-300 bg-transparent">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <img class="h-16 rounded-xl" src="./images/logo.jpeg" alt="logo">
+            <!-- Links -->
+            <div class="hidden md:flex space-x-8 text-lg font-semibold text-white">
+                <a href="#" class=" hover:text-red-500 transition">Home</a>
+                <a href="#" class=" hover:text-red-500 transition">Products</a>
+                <a href="#" class=" hover:text-red-500 transition">About Us</a>
+                <a href="#" class=" hover:text-red-500 transition">Contact Us</a>
+            </div>
+            <div></div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-2xl text-gray-500 focus:outline-none">
+                ☰
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden flex flex-col space-y-4 mt-4 text-center bg-black text-white p-4 md:hidden">
+            <a href="#" class="block hover:text-red-500">Home</a>
+            <a href="#" class="block hover:text-red-500">Products</a>
+            <a href="#" class="block hover:text-red-500">About Us</a>
+            <a href="#" class="block hover:text-red-500">Contact Us</a>
+        </div>
+    </nav>
+    <!-- Slider -->
+    <div class="relative w-full h-[500px] overflow-hidden">
+        <!-- Slides Container -->
+        <div class="w-full h-full relative">
+            <!-- Slide 1 -->
+            <div class="absolute inset-0 slide active flex items-center justify-between gap-10  bg-[#DB3241] ">
+                <img src="./images/1.jpg" alt="Product" class=" w-full h-full ml-10 spin-in">
+                <div class="text-white text-fade">
+                    <h2 class="text-4xl font-bold">Refreshing Apple Juice</h2>
+                    <p class="mt-4 text-lg">Made from the finest apples since 1985.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="absolute inset-0 slide flex items-center justify-between gap-10 bg-[#FDA517] " >
+                <img src="./images/2.jpg" alt="Product" class="w-full h-full ml-10 spin-in">
+                <div class="text-white text-fade mr-10">
+                    <h2 class="text-4xl font-bold">Delicious Mango Juice</h2>
+                    <p class="mt-4 text-lg">Rich mango flavor with natural goodness.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="absolute inset-0 slide flex items-center justify-between gap-10 bg-[#77D159] " >
+                <img src="./images/3.jpg" alt="Product" class=" w-full h-full ml-10 spin-in">
+                <div class="text-white text-fade mr-10">
+                    <h2 class="text-4xl font-bold">Sparkling Soda</h2>
+                    <p class="mt-4 text-lg">Fizzy and refreshing drink for all occasions.</p>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="absolute inset-0 slide flex items-center justify-between gap-10 bg-[#FEB21F] " >
+                <img src="./images/4.jpg" alt="Product" class=" w-full h-full ml-10 spin-in">
+                <div class="text-white text-fade mr-10">
+                    <h2 class="text-4xl font-bold">Natural Energy Drink</h2>
+                    <p class="mt-4 text-lg">Boost your day with 100% natural ingredients.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Buttons -->
+        <button onclick="prevSlide()" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-xl">&lt;</button>
+        <button onclick="nextSlide()" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-xl">&gt;</button>
+
+        <!-- Dots Indicator -->
+        <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2">
+            <div class="dot w-3 h-3 bg-white rounded-full cursor-pointer"></div>
+            <div class="dot w-3 h-3 bg-white rounded-full cursor-pointer"></div>
+            <div class="dot w-3 h-3 bg-white rounded-full cursor-pointer"></div>
+            <div class="dot w-3 h-3 bg-white rounded-full cursor-pointer"></div>
+        </div>
+    </div>
+
+    <!-- range of products -->
+    <section class="py-10">
+        <h2 class="text-4xl font-bold text-center text-red-600 mb-6">Our Product Range</h2>
+
+        <!-- Scrollable product section -->
+        <div class="flex justify-center overflow-x-auto px-10 py-4 scrollbar-hide">
+                <img class="product-card h-32 md:h-56 " src="./images/p1.png"  alt="Product">
+                <img class="product-card h-32 md:h-56 " src="./images/p2.png"  alt="Product">
+                <img class="product-card h-32 md:h-56 " src="./images/p3.png"  alt="Product">
+                <img class="product-card h-32 md:h-56 " src="./images/p4.png"  alt="Product">
+                <img class="product-card h-32 md:h-56 " src="./images/p5.png"  alt="Product">
+                <img class="product-card h-32 md:h-56 " src="./images/p6.png"  alt="Product">
+                <img class="product-card h-32 md:h-56 " src="./images/p7.png"  alt="Product">
+                <img class="product-card h-32 md:h-56 " src="./images/p8.png"  alt="Product">
+                <img class="product-card h-32 md:h-56 " src="./images/p9.png"  alt="Product">
+        </div>
+    </section>
+
+    <script src="index.js" ></script>
+</body>
+</html>
