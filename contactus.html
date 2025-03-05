@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldCup</title>
+    <link rel="icon" type="image/x-icon"  href="./images/logo-removebg-preview.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        .sticky-nav {
+            transition: background-color 0.3s ease-in-out, padding 0.3s;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body >
+    <!-- navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 p-4 transition-all duration-300 bg-transparent">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <img class="h-16 rounded-xl" src="./images/logo.jpeg" alt="logo">
+            <!-- Links -->
+            <div class="hidden md:flex space-x-8 text-lg font-semibold text-white">
+                <a href="./index.html" class=" text-black hover:text-red-500 transition">Home</a>
+                <a href="./products.html" class=" text-black hover:text-red-500 transition">Products</a>
+                <a href="./aboutus.html" class=" text-black hover:text-red-500 transition">About Us</a>
+                <a href="./contactus.html" class="text-black hover:text-red-500 transition">Contact Us</a>
+            </div>
+            <div></div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-2xl text-gray-500 focus:outline-none">
+                ☰
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden flex flex-col space-y-4 mt-4 text-center bg-black text-white p-4 md:hidden">
+            <a href="./index.html" class="block hover:text-red-500">Home</a>
+            <a href="./products.html" class="block hover:text-red-500">Products</a>
+            <a href="./aboutus.html" class="block hover:text-red-500">About Us</a>
+            <a href="./contactus.html" class="block hover:text-red-500">Contact Us</a>
+        </div>
+    </nav>
+<div class="p-10" ></div>
+    <!-- contact us -->
+    <div class="p-5 bg-white md:flex justify-center gap-4">
+        <div class="bg-white mt-4 rounded-md flex flex-col p-3 gap-2 items-center">
+            <i class="fa-solid fa-location-dot fa-xl"></i>
+            <h3 class="font-bold text-xl">Address</h3>
+            <p>41, Somwhere street 2nd cross</p>
+            <p>Somecity</p>
+            <p>602601</p>
+        </div>
+        <div class="bg-white mt-4 rounded-md flex flex-col p-3 px-10 gap-2 items-center">
+            <i class="fa-solid fa-phone fa-xl"></i>
+            <h3 class="font-bold text-xl">Phone Number</h3>
+            <p class="text-blue-600">+91-9159876432</p>
+            <p class="text-blue-600">+91-9876543210</p>
+        </div>
+        <div class="bg-white mt-4 rounded-md flex flex-col p-3 gap-2 items-center">
+            <i class="fa-solid fa-envelope fa-xl"></i>
+            <h3 class="font-bold text-xl">E-mail Address</h3>
+            <p class="text-blue-600">thereathusarees@gamil.com</p>
+        </div>
+        <div class="bg-white mt-4 rounded-md flex flex-col p-3 gap-2 items-center">
+            <i class="fa-solid fa-calendar-days fa-xl"></i>
+            <h3 class="font-bold text-xl">Working Days</h3>
+            <p>Mon-Sat/ 9.00Am - 6.30Pm (IST)</p>
+        </div>
+      </div>
+    <section class="min-h-screen flex flex-col justify-center items-center p-10">
+        <h2 class="text-4xl font-bold mb-6 fade-in">Get in Touch</h2>
+        <p class="text-lg text-gray-300 fade-in">We’d love to hear from you! Visit us at our location.</p>
+        
+        <div class="w-full max-w-4xl mt-10 fade-in">
+            <iframe 
+                class="w-full h-80 rounded-lg shadow-lg" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509144!2d144.95373631550406!3d-37.816279742021335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d12f49a5f06b!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1635679006892!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+      <!-- footer -->
+      <section id="contact" class="py-6 px-8 bg-black text-white text-center">
+        <div class=" flex justify-around items-center flex-wrap gap-10" >
+            <div class="flex flex-col justify-center items-center gap-4">
+                <img class="h-28 w-28 "  src="./images/logo.jpeg" alt="logo">
+                <h2>Refreshing the world with  <br> premium-quality beverages since 1985!</h2>
+            </div>
+            <div class="flex flex-wrap justify-center gap-16 md:gap-32 items-center" >
+                <!-- quick links -->
+            <div class="text-left">
+                <h2 class="font-bold ">Quick Links</h2>
+                <h2 class="hover:text-white cursor-pointer">Home</h2>
+                <h2 class="hover:text-white cursor-pointer">Products</h2>
+                <h2 class="hover:text-white cursor-pointer">About Us</h2>
+                <h2 class="hover:text-white cursor-pointer">Contact US</h2> 
+            </div>
+            <!-- contact details -->
+            <div class="text-left">
+                <h2 class="font-bold ">Contact Details</h2>
+                <div class="flex gap-2 items-center mt-1 " >
+                    <i class="fa-solid fa-phone fa-sm" style="color: #ffffff;"></i>
+                    <h2>+91 9095796142</h2>
+                </div>
+              <div class="flex gap-2 items-center mt-1 " >
+                  <i class="fa-solid fa-phone fa-sm" style="color: #ffffff;"></i>
+                  <h2>+91 9159088617</h2>
+              </div>
+              <div class="flex gap-2 items-center mt-1 " >
+                  <h2><i class="fa-solid fa-location-dot fa-sm" style="color: #ffffff;"></i> MIG-280, Tamil University,<br>Sindhamani,<br>MC Road,Thanjavur-613 010.</h2>
+               </div>
+               <div class="flex gap-2 items-center mt-1 " >
+                <h2><i class="fa-solid fa-location-dot fa-sm" style="color: #ffffff;"></i> 141, Sethilal Nagar,<br>Karaikal-609 602.</h2>
+             </div>
+               <div class="flex gap-2 items-center mt-1 " >
+                <i class="fa-solid fa-envelope fa-sm" style="color: #ffffff;"></i>
+                   <h2>scalarcodeinnovations@gmail.com</h2>
+               </div>
+            </div>
+            </div>
+            
+            <!-- follow us -->
+             <div class="flex flex-col gap-8">
+                <h2 class="font-bold">Follow Us On</h2>
+                <div class="flex gap-6">
+                    <i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i>
+                </div>
+             </div>
+        </div>
+        <hr class="mt-3">
+        <h2 class="mt-2">© 2025 GoldCup | All Rights Reserved</h2>
+    </section>
+
+    <script>AOS.init();</script>
+    <script src="contactus.js" ></script>
+   
+</body>
+</html>
