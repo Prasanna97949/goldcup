@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>GoldCup</title>
     <style>
@@ -58,9 +60,12 @@
         .product-card:hover {
             transform: scale(1.1);
         }
+        .product-card1:hover img {
+            transform:  rotateZ(40deg);
+        }
     </style>
 </head>
-<body>
+<body >
     <!-- navbar -->
     <nav id="navbar" class="fixed top-0 left-0 w-full z-50 p-4 transition-all duration-300 bg-transparent">
         <div class="container mx-auto flex justify-between items-center">
@@ -157,6 +162,187 @@
                 <img class="product-card h-32 md:h-56 " src="./images/p9.png"  alt="Product">
         </div>
     </section>
+    <!-- product card -->
+    <section class="py-10">
+        <h2 class="text-4xl font-bold text-center text-red-500 mb-8">Our Products</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Product Cards -->
+            <div class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+                <img src="./images/p1.png" alt="Product 1" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
+                <h3 class="text-xl font-semibold mt-4">Apple Drink</h3>
+                <p class="text-gray-400 mt-2">Refreshing apple goodness in every sip!</p>
+            </div>
+
+            <div class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+                <img src="./images/p2.png" alt="Product 2" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
+                <h3 class="text-xl font-semibold mt-4">Orange Juice</h3>
+                <p class="text-gray-400 mt-2">Zesty and refreshing orange delight!</p>
+            </div>
+
+            <div class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+                <img src="./images/p3.png" alt="Product 3" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
+                <h3 class="text-xl font-semibold mt-4">Paneer Soda</h3>
+                <p class="text-gray-400 mt-2">Cool and fizzy paneer soda refreshment!</p>
+            </div>
+
+            <div class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+                <img src="./images/p4.png" alt="Product 4" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
+                <h3 class="text-xl font-semibold mt-4">Mango Juice</h3>
+                <p class="text-gray-400 mt-2">Rich and pulpy mango delight!</p>
+            </div>
+
+            <div class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+                <img src="./images/p5.png" alt="Product 5" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
+                <h3 class="text-xl font-semibold mt-4">Clear Lemon</h3>
+                <p class="text-gray-400 mt-2">Refreshing and zesty lemon burst!</p>
+            </div>
+
+            <div class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+                <img src="./images/p6.png" alt="Product 6" class=" h-56 ml-36 object-cover  rounded-lg transition-transform duration-500">
+                <h3 class="text-xl font-semibold mt-4">Mixture Fruit</h3>
+                <p class="text-gray-400 mt-2">A delightful blend of assorted fruits!</p>
+            </div>
+
+            <div class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+                <img src="./images/p7.png" alt="Product 7" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
+                <h3 class="text-xl font-semibold mt-4">Clear Lemon green</h3>
+                <p class="text-gray-400 mt-2">A zesty and refreshing lemon-lime drink!</p>
+            </div>
+
+            <div class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+                <img src="./images/p8.png" alt="Product 8" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
+                <h3 class="text-xl font-semibold mt-4">Soda</h3>
+                <p class="text-gray-400 mt-2">Crisp, fizzy, and ultra-refreshing soda!</p>
+            </div>
+
+            <div class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+                <img src="./images/p9.png" alt="Product 9" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
+                <h3 class="text-xl font-semibold mt-4">Lemon Salt Soda</h3>
+                <p class="text-gray-400 mt-2">Tangy, fizzy, and perfectly refreshing lemon salt soda!</p>
+            </div>
+        </div>
+    </section>
+    <!-- why us -->
+    <section class="bg-white px-6 py-16">
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-red-600">Why Choose Us?</h2>
+          <p class="text-gray-600 mt-2">Delivering excellence since 1985</p>
+      
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            
+            <!-- Card 1 -->
+            <div class="p-6 shadow-lg rounded-lg bg-gray-100 hover:bg-red-600 hover:text-white transition transform hover:scale-105">
+              <div class="text-4xl text-red-500 mb-4">
+                ⚡
+              </div>
+              <h3 class="font-bold text-xl">Premium Quality</h3>
+              <p class="text-gray-700 hover:text-white mt-2">We use only the finest ingredients for an authentic taste.</p>
+            </div>
+      
+            <!-- Card 2 -->
+            <div class="p-6 shadow-lg rounded-lg bg-gray-100 hover:bg-red-600 hover:text-white transition transform hover:scale-105">
+              <div class="text-4xl text-red-500 mb-4">
+                🌍
+              </div>
+              <h3 class="font-bold text-xl">Trusted Since 1985</h3>
+              <p class="text-gray-700 hover:text-white mt-2">A legacy of refreshing beverages loved by generations.</p>
+            </div>
+      
+            <!-- Card 3 -->
+            <div class="p-6 shadow-lg rounded-lg bg-gray-100 hover:bg-red-600 hover:text-white transition transform hover:scale-105">
+              <div class="text-4xl text-red-500 mb-4">
+                ✅
+              </div>
+              <h3 class="font-bold text-xl">100% Natural Ingredients</h3>
+              <p class="text-gray-700 hover:text-white mt-2">No artificial flavors, just pure and healthy refreshment.</p>
+            </div>
+      
+            <!-- Card 4 -->
+            <div class="p-6 shadow-lg rounded-lg bg-gray-100 hover:bg-red-600 hover:text-white transition transform hover:scale-105">
+              <div class="text-4xl text-red-500 mb-4">
+                🚀
+              </div>
+              <h3 class="font-bold text-xl">Fast Delivery</h3>
+              <p class="text-gray-700 hover:text-white mt-2">Enjoy our products fresh and fast with our seamless distribution.</p>
+            </div>
+      
+            <!-- Card 5 -->
+            <div class="p-6 shadow-lg rounded-lg bg-gray-100 hover:bg-red-600 hover:text-white transition transform hover:scale-105">
+              <div class="text-4xl text-red-500 mb-4">
+                🏆
+              </div>
+              <h3 class="font-bold text-xl">Award-Winning Taste</h3>
+              <p class="text-gray-700 hover:text-white mt-2">Recognized for excellence in taste and quality.</p>
+            </div>
+      
+            <!-- Card 6 -->
+            <div class="p-6 shadow-lg rounded-lg bg-gray-100 hover:bg-red-600 hover:text-white transition transform hover:scale-105">
+              <div class="text-4xl text-red-500 mb-4">
+                💰
+              </div>
+              <h3 class="font-bold text-xl">Affordable Pricing</h3>
+              <p class="text-gray-700 hover:text-white mt-2">Enjoy premium quality beverages at the best prices.</p>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <section id="contact" class="py-6 px-8 bg-black text-white text-center">
+        <div class=" flex justify-around items-center flex-wrap gap-10" >
+            <div class="flex flex-col justify-center items-center gap-4">
+                <img class="h-28 w-28 "  src="./images/logo.jpeg" alt="logo">
+                <h2>Refreshing the world with  <br> premium-quality beverages since 1985!</h2>
+            </div>
+            <div class="flex flex-wrap justify-center gap-16 md:gap-32 items-center" >
+                <!-- quick links -->
+            <div class="text-left">
+                <h2 class="font-bold ">Quick Links</h2>
+                <h2 class="hover:text-white cursor-pointer">Home</h2>
+                <h2 class="hover:text-white cursor-pointer">Products</h2>
+                <h2 class="hover:text-white cursor-pointer">About Us</h2>
+                <h2 class="hover:text-white cursor-pointer">Contact US</h2> 
+            </div>
+            <!-- contact details -->
+            <div class="text-left">
+                <h2 class="font-bold ">Contact Details</h2>
+                <div class="flex gap-2 items-center mt-1 " >
+                    <i class="fa-solid fa-phone fa-sm" style="color: #ffffff;"></i>
+                    <h2>+91 9095796142</h2>
+                </div>
+              <div class="flex gap-2 items-center mt-1 " >
+                  <i class="fa-solid fa-phone fa-sm" style="color: #ffffff;"></i>
+                  <h2>+91 9159088617</h2>
+              </div>
+              <div class="flex gap-2 items-center mt-1 " >
+                  <h2><i class="fa-solid fa-location-dot fa-sm" style="color: #ffffff;"></i> MIG-280, Tamil University,<br>Sindhamani,<br>MC Road,Thanjavur-613 010.</h2>
+               </div>
+               <div class="flex gap-2 items-center mt-1 " >
+                <h2><i class="fa-solid fa-location-dot fa-sm" style="color: #ffffff;"></i> 141, Sethilal Nagar,<br>Karaikal-609 602.</h2>
+             </div>
+               <div class="flex gap-2 items-center mt-1 " >
+                <i class="fa-solid fa-envelope fa-sm" style="color: #ffffff;"></i>
+                   <h2>scalarcodeinnovations@gmail.com</h2>
+               </div>
+            </div>
+            </div>
+            
+            <!-- follow us -->
+             <div class="flex flex-col gap-8">
+                <h2 class="font-bold">Follow Us On</h2>
+                <div class="flex gap-6">
+                    <i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i>
+                </div>
+             </div>
+        </div>
+        <hr class="mt-3">
+        <h2 class="mt-2">© 2025 GoldCup | All Rights Reserved</h2>
+    </section>
+
 
     <script src="index.js" ></script>
 </body>
