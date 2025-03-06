@@ -14,38 +14,29 @@
         .sticky-nav {
             transition: background-color 0.3s ease-in-out, padding 0.3s;
         }
+        .slider-container {
+            overflow: hidden;
+            position: relative;
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
         .slide {
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
+            min-width: 100%;
+            position: relative;
+            overflow: hidden;
         }
-        .active {
-            opacity: 1;
+        .moving-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: moveLeftRight 3s infinite alternate ease-in-out;
         }
-        .spin-in {
-            animation: spin-in 1s ease-out;
-        }
-        @keyframes spin-in {
-            from {
-                transform: rotate(-180deg) scale(0);
-                opacity: 0;
-            }
-            to {
-                transform: rotate(0deg) scale(1);
-                opacity: 1;
-            }
-        }
-        .text-fade {
-            animation: text-fade 1s ease-out;
-        }
-        @keyframes text-fade {
-            from {
-                transform: translateX(50px);
-                opacity: 0;
-            }
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
+        @keyframes moveLeftRight {
+            0% { transform: translate(-50%, -50%) translateX(-10px); }
+            100% { transform: translate(-50%, -50%) translateX(10px); }
         }
         /* Wave-like entrance animation */
         .product-card {
@@ -96,58 +87,34 @@
         </div>
     </nav>
     <!-- Slider -->
-    <div class="relative w-full h-[500px] overflow-hidden">
-        <!-- Slides Container -->
-        <div class="w-full h-full relative">
-            <!-- Slide 1 -->
-            <div class="absolute inset-0 slide active flex items-center justify-between gap-10  bg-[#DB3241] ">
-                <img src="./images/1.png" alt="Product" class=" w-full h-full ml-10 spin-in">
-                <div class="text-white text-fade">
-                    <h2 class="text-4xl text-black font-bold">Refreshing Apple Juice</h2>
-                    <p class="mt-4 text-black text-lg">Made from the finest apples since 1985.</p>
+    <div class="bg-gray-900 flex justify-center items-center ">
+        <div class="w-full slider-container relative">
+            <div class="slider flex">
+                <div class="slide relative bg-red-600 ">
+                    <img src="./images/1.png" class="ml-10 md:ml-96 "  alt="Slide 1">
+                    <img src="./images/s1.png" class="moving-image" alt="Overlay Image">
+                    <h2 class=" hidden md:flex absolute top-60 right-20 text-black text-4xl font-bold"><span class="text-white" >Pure</span>, refreshing apple bliss!</h2>
+                </div>
+                <div class="slide relative bg-yellow-400 ">
+                    <img src="./images/2.png" class="ml-10 md:ml-96" alt="Slide 2">
+                    <img src="./images/s2.png" class="moving-image" alt="Overlay Image">
+                    <h2 class=" hidden md:flex absolute top-60 right-20 text-black text-4xl font-bold">Paneer, Mango and Orange bliss!</h2>
+                </div>
+                <div class="slide relative bg-yellow-500 ">
+                    <img src="./images/3.png" class="ml-10 md:ml-96" alt="Slide 3">
+                    <img src="./images/s3.png" class="moving-image" alt="Overlay Image">
+                    <h2 class=" hidden md:flex absolute top-60 right-20 text-black text-4xl font-bold">Zesty, refreshing orange burst!</h2>
+                </div>
+                <div class="slide relative bg-green-400 ">
+                    <img src="./images/4.png" class="ml-10 md:ml-96" alt="Slide 4">
+                    <img src="./images/s4.png" class="moving-image" alt="Overlay Image">
+                    <h2 class=" hidden md:flex absolute top-60 right-20 text-black text-4xl font-bold">Crisp and zesty lemon refreshment!</h2>
                 </div>
             </div>
-
-            <!-- Slide 2 -->
-            <div class="absolute inset-0 slide flex items-center justify-between gap-10 bg-[#FDA517] " >
-                <img src="./images/2.png" alt="Product" class="w-full h-full ml-10 spin-in">
-                <div class="text-white text-fade mr-10">
-                    <h2 class="text-4xl text-black font-bold">Delicious Mango,Orange and Panner</h2>
-                    <p class="mt-4 text-black text-lg">Rich mango flavor with natural goodness.</p>
-                </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="absolute inset-0 slide flex items-center justify-between gap-10 bg-[#77D159] " >
-                <img src="./images/4.png" alt="Product" class=" w-full h-full ml-10 spin-in">
-                <div class="text-white text-fade mr-10">
-                    <h2 class="text-4xl text-black font-bold">Sparkling Clear Lemon Soda</h2>
-                    <p class="mt-4 text-black text-lg">Fizzy and refreshing drink for all occasions.</p>
-                </div>
-            </div>
-
-            <!-- Slide 4 -->
-            <div class="absolute inset-0 slide flex items-center justify-between gap-10 bg-[#FEB21F] " >
-                <img src="./images/3.png" alt="Product" class=" w-full h-full ml-10 spin-in">
-                <div class="text-white text-fade mr-10">
-                    <h2 class="text-4xl text-black  font-bold">Orange</h2>
-                    <p class="mt-4 text-black text-lg">Boost your day with 100% natural ingredients.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Navigation Buttons -->
-        <button onclick="prevSlide()" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-xl">&lt;</button>
-        <button onclick="nextSlide()" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-xl">&gt;</button>
-
-        <!-- Dots Indicator -->
-        <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            <div class="dot w-3 h-3 bg-white rounded-full cursor-pointer"></div>
-            <div class="dot w-3 h-3 bg-white rounded-full cursor-pointer"></div>
-            <div class="dot w-3 h-3 bg-white rounded-full cursor-pointer"></div>
-            <div class="dot w-3 h-3 bg-white rounded-full cursor-pointer"></div>
+            <button onclick="prevSlide()" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full">❮</button>
+            <button onclick="nextSlide()" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full">❯</button>
         </div>
     </div>
-
     <!-- range of products -->
     <section class="py-10">
         <h2 class="text-4xl font-bold text-center text-red-600 mb-6">Our Product Range</h2>

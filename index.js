@@ -18,35 +18,22 @@ const navbar = document.getElementById('navbar');
         });
 
 // slider
-let slides = document.querySelectorAll(".slide");
-        let dots = document.querySelectorAll(".dot");
-        let index = 0;
-        let interval = setInterval(nextSlide, 3000);
-
-        function updateSlides() {
-            slides.forEach((slide, i) => {
-                slide.classList.remove("active");
-                dots[i].classList.remove("bg-red-500");
-            });
-
-            slides[index].classList.add("active");
-            dots[index].classList.add("bg-red-500");
-        }
-
-        function nextSlide() {
-            index = (index + 1) % slides.length;
-            updateSlides();
-        }
-
-        function prevSlide() {
-            index = (index - 1 + slides.length) % slides.length;
-            updateSlides();
-        }
-
-        function jumpToSlide(slideIndex) {
-            index = slideIndex;
-            updateSlides();
-        }
+let currentIndex = 0;
+const slides = document.querySelectorAll(".slide");
+function showSlide(index) {
+    if (index >= slides.length) currentIndex = 0;
+    if (index < 0) currentIndex = slides.length - 1;
+    document.querySelector(".slider").style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+function nextSlide() {
+    currentIndex++;
+    showSlide(currentIndex);
+}
+function prevSlide() {
+    currentIndex--;
+    showSlide(currentIndex);
+}
+setInterval(nextSlide, 4000); 
 
 // wave animation
 const productCards = document.querySelectorAll(".product-card");
