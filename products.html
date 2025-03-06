@@ -70,7 +70,7 @@
 </head>
 <body >
     <!-- navbar -->
-    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 p-4 transition-all duration-300 bg-transparent">
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-20 p-4 transition-all duration-300 bg-transparent">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
             <img class="h-16 rounded-xl" src="./images/logo.jpeg" alt="logo">
@@ -119,61 +119,95 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <!-- Product Cards -->
-            <div data-aos="flip-left" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+            <div data-aos="flip-left" data-aos-duration="2000" class="product-card1 cursor-pointer p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl"
+            onclick="openPopup('./images/p1.png', 'Apple Drink', 'Apple Drink is a refreshing blend of crisp, juicy apples packed with natural goodness. Its sweet and tangy flavor offers a perfect balance of taste and nutrition. Enjoy the pure essence of apples in every sip!', ['120ml'])">
                 <img src="./images/p1.png" alt="Product 1" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
                 <h3 class="text-xl font-semibold mt-4">Apple Drink</h3>
                 <p class="text-gray-400 mt-2">Refreshing apple goodness in every sip!</p>
             </div>
 
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1 cursor-pointer p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl"
+            onclick="openPopup('./images/p2.png', 'Orange Juice', 'Refreshing and packed with natural citrus goodness, our Orange Juice is a burst of pure sunshine in every sip. Made from ripe, handpicked oranges, it delivers a perfect balance of sweetness and tanginess. Enjoy the taste of real fruit in every drop!', ['120ml'])">
                 <img src="./images/p2.png"  alt="Product 2" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
                 <h3 class="text-xl font-semibold mt-4">Orange Juice</h3>
                 <p class="text-gray-400 mt-2">Zesty and refreshing orange delight!</p>
             </div>
 
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1 cursor-pointer p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl"
+            onclick="openPopup('./images/p3.png', 'Paneer Soda', 'Paneer Soda is a unique and refreshing drink with a sweet, fizzy twist. Its signature flavor offers a nostalgic taste loved by all. A perfect blend of tradition and refreshment!', ['120ml'])">
                 <img src="./images/p3.png" alt="Product 3" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
                 <h3 class="text-xl font-semibold mt-4">Paneer Soda</h3>
                 <p class="text-gray-400 mt-2">Cool and fizzy paneer soda refreshment!</p>
             </div>
 
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1 cursor-pointer p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl"
+            onclick="openPopup('./images/p4.png', 'Mango Juice', 'Mango Juice is a rich and tropical delight packed with the sweetness of ripe mangoes. Its smooth texture and vibrant taste offer pure refreshment. A sip of sunshine in every bottle!', ['120ml'])">
                 <img src="./images/p4.png" alt="Product 4" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
                 <h3 class="text-xl font-semibold mt-4">Mango Juice</h3>
                 <p class="text-gray-400 mt-2">Rich and pulpy mango delight!</p>
             </div>
 
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1 cursor-pointer p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl"
+            onclick="openPopup('./images/p5.png', 'Clear Lemon', 'Clear Lemon is a crisp and zesty drink with a refreshing citrus punch. Its tangy flavor energizes every sip. Perfect for a cool and revitalizing experience!', ['120ml'])">
                 <img src="./images/p5.png" alt="Product 5" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
                 <h3 class="text-xl font-semibold mt-4">Clear Lemon</h3>
                 <p class="text-gray-400 mt-2">Refreshing and zesty lemon burst!</p>
             </div>
 
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1 cursor-pointer p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl"
+            onclick="openPopup('./images/p6.png', 'Mixture Fruit', 'Mixture Fruit is a delightful blend of various fruits, offering a burst of natural flavors in every sip. It’s a perfect balance of sweetness and refreshment. Enjoy a fruity fusion like never before!', ['120ml'])">
                 <img src="./images/p6.png" alt="Product 6" class=" h-56 ml-36 object-cover  rounded-lg transition-transform duration-500">
                 <h3 class="text-xl font-semibold mt-4">Mixture Fruit</h3>
                 <p class="text-gray-400 mt-2">A delightful blend of assorted fruits!</p>
             </div>
 
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1 cursor-pointer p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl"
+            onclick="openPopup('./images/p7.png', 'Clear Lemon green', 'Clear Lemon Green is a zesty and refreshing drink with a tangy lemon twist. Its crisp taste delivers an instant burst of coolness. Perfect for a revitalizing sip anytime!', ['120ml'])">
                 <img src="./images/p7.png" alt="Product 7" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
                 <h3 class="text-xl font-semibold mt-4">Clear Lemon green</h3>
                 <p class="text-gray-400 mt-2">A zesty and refreshing lemon-lime drink!</p>
             </div>
 
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1 cursor-pointer p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl"
+            onclick="openPopup('./images/p8.png', 'Soda', 'Soda is a classic, fizzy refreshment that delivers pure, crisp carbonation. Perfect as a standalone drink or a versatile mixer. Enjoy the sparkling burst of freshness!', ['120ml'])">
                 <img src="./images/p8.png" alt="Product 8" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
                 <h3 class="text-xl font-semibold mt-4">Soda</h3>
                 <p class="text-gray-400 mt-2">Crisp, fizzy, and ultra-refreshing soda!</p>
             </div>
 
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
+            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1 cursor-pointer p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl"
+            onclick="openPopup('./images/p9.png', 'Lemon Salt Soda', 'Lemon Salt Soda is a zesty and tangy refreshment with a perfect balance of citrus and fizz. A refreshing twist to quench your thirst instantly!', ['120ml'])">
                 <img src="./images/p9.png" alt="Product 9" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
                 <h3 class="text-xl font-semibold mt-4">Lemon Salt Soda</h3>
                 <p class="text-gray-400 mt-2">Tangy, fizzy, and perfectly refreshing lemon salt soda!</p>
             </div>
         </div>
     </section>
+
+    <!-- pop-up -->
+    <div id="popup" style="z-index: 30;" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-white w-[90%] max-w-[600px] rounded-lg shadow-lg p-6 relative">
+            <button onclick="closePopup()" class="absolute top-3 right-3 text-gray-600 hover:text-black text-xl">&times;</button>
+            
+            <div class="flex flex-col md:flex-row items-center md:items-start">
+                <img id="popupImage" src="" alt="Product Image" class="w-full md:w-1/2 object-contain max-h-[250px]">
+    
+                <div class="md:ml-6 w-full">
+                    <h2 id="popupTitle" class="text-xl font-semibold text-gray-800">Product Name</h2>
+                    <p id="popupDescription" class="text-gray-600 mt-2 max-h-[150px] overflow-auto">Product Description goes here...</p>
+    
+                    <div class="mt-4">
+                        <h3 class="text-gray-700 font-medium">Available Variations</h3>
+                        <div id="popupSizes" class="flex gap-2 mt-2">
+                            <span class="bg-gray-200 px-3 py-1 rounded-md text-sm">120ml</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-md text-sm">250ml</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-md text-sm">500ml</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
       <!-- footer -->
       <section id="contact" class="py-6 px-8 bg-black text-white text-center">
