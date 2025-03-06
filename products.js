@@ -34,3 +34,20 @@ const productCards = document.querySelectorAll(".product-card");
 
         window.addEventListener("scroll", handleScroll);
         handleScroll();
+
+        // popup
+
+        function openPopup(imageSrc, title, description, sizes) {
+            document.getElementById('popupImage').src = imageSrc;
+            document.getElementById('popupTitle').innerText = title;
+            document.getElementById('popupDescription').innerText = description;
+    
+            let sizesContainer = document.getElementById('popupSizes');
+            sizesContainer.innerHTML = sizes.map(size => `<span class="bg-gray-200 px-3 py-1 rounded-md text-sm">${size}</span>`).join("");
+    
+            document.getElementById('popup').classList.remove('hidden');
+        }
+    
+        function closePopup() {
+            document.getElementById('popup').classList.add('hidden');
+        }
