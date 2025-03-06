@@ -117,64 +117,104 @@
                 <img class="product-card h-32 md:h-56 " src="./images/p9.png"  alt="Product">
         </div>
     </section>
-    <!-- product card -->
-    <section class="py-10">
-        <h2 class="text-4xl font-bold text-center text-red-500 mb-8">Our Products</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <!-- Product Cards -->
-            <div data-aos="flip-left" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
-                <img src="./images/p1.png" alt="Product 1" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
-                <h3 class="text-xl font-semibold mt-4">Apple Drink</h3>
-                <p class="text-gray-400 mt-2">Refreshing apple goodness in every sip!</p>
+    <!-- our story -->
+    <section class="relative bg-black text-white py-20 px-6 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('/path-to-background.jpg')] bg-cover bg-center opacity-20"></div>
+        
+        <div class="relative max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-red-500 mb-6" data-aos="fade-down">Our Story</h2>
+            <p class="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto" data-aos="fade-up">
+                Founded in <span class="text-red-500 font-semibold">1985</span> in <span class="text-red-500 font-semibold">Vallam, Thanjavur</span>, GoldCup has been a pioneer in crafting refreshing beverages.
+                From classic <span class="text-red-500">apple juice</span> to traditional <span class="text-red-500">paneer soda</span>,and many more. our journey has been one of passion and quality.
+            </p>
+        </div>
+        
+        <div class="relative flex flex-wrap justify-center gap-6 mt-12">
+            <div class="w-96 bg-white bg-opacity-10 backdrop-blur-lg p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300" data-aos="zoom-in">
+                <img src="./images/big.jpg" alt="Apple Juice" class="w-full h-40 object-cover rounded-md">
+                <h3 class="text-xl font-semibold text-white mt-4">The Beginning</h3>
+                <p class="text-gray-300 text-sm mt-2">Goldcup was established in 1985 in Vallam, Thanjavur, with a dedication to crafting high-quality beverages. Starting as a small unit, they focused on perfecting traditional flavors with strict quality standards. Their soda and fruit-based drinks quickly gained popularity, leading to expansion beyond Thanjavur. Over the years, they introduced a diverse range of beverages, constantly innovating to meet customer preferences. Today, Goldcup remains a trusted name, known for its commitment to taste, purity, and excellence.</p>
             </div>
-
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
-                <img src="./images/p2.png"  alt="Product 2" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
-                <h3 class="text-xl font-semibold mt-4">Orange Juice</h3>
-                <p class="text-gray-400 mt-2">Zesty and refreshing orange delight!</p>
+            
+            <div class="w-96 bg-white bg-opacity-10 backdrop-blur-lg p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300" data-aos="zoom-in" data-aos-delay="200">
+                <img src="./images/crafting.jpg" alt="Mango Juice" class="w-full h-40 object-cover rounded-md">
+                <h3 class="text-xl font-semibold text-white mt-4">Crafting Flavors</h3>
+                <p class="text-gray-300 text-sm mt-2">Goldcup takes pride in crafting flavors that capture the essence of natural ingredients. Each beverage is carefully formulated to deliver a refreshing and authentic taste. From rich fruit juices to crisp sodas, their recipes balance tradition and innovation. They use high-quality ingredients to ensure consistency and satisfaction in every sip. With a passion for excellence, Goldcup continues to create flavors that delight generations.</p>
             </div>
-
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
-                <img src="./images/p3.png" alt="Product 3" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
-                <h3 class="text-xl font-semibold mt-4">Paneer Soda</h3>
-                <p class="text-gray-400 mt-2">Cool and fizzy paneer soda refreshment!</p>
+            
+            <div class="w-96 bg-white bg-opacity-10 backdrop-blur-lg p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300" data-aos="zoom-in" data-aos-delay="400">
+                <img src="./images/trust.jpg" alt="Soda" class="w-full h-40 object-cover rounded-md">
+                <h3 class="text-xl font-semibold text-white mt-4">A Legacy of Trust</h3>
+                <p class="text-gray-300 text-sm mt-2">Goldcup has built a legacy of trust since its inception in 1985. Their commitment to quality and authenticity has earned the loyalty of customers for decades. By maintaining strict production standards, they ensure every bottle meets expectations. Generations have enjoyed their beverages, making them a household name. With a strong foundation, Goldcup continues to uphold its reputation for excellence.</p>
             </div>
-
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
-                <img src="./images/p4.png" alt="Product 4" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
-                <h3 class="text-xl font-semibold mt-4">Mango Juice</h3>
-                <p class="text-gray-400 mt-2">Rich and pulpy mango delight!</p>
+        </div>
+    </section>
+    <!-- quality,research -->
+    <section class="bg-gray-100 py-12 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-red-600 mb-8">Our Commitment to Excellence</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Quality Assurance -->
+                <div class="bg-white p-6 flex flex-col justify-center items-center rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="./images/quality.jpg" alt="quality">
+                    <h3 class="text-xl font-semibold text-red-500 mb-4">Quality Assurance</h3>
+                    <p class="text-gray-600">At Goldcup, quality is our top priority, ensuring every beverage meets the highest standards. 
+                    We source premium ingredients to maintain the authentic taste of our drinks. 
+                    Every batch undergoes rigorous testing to guarantee purity and consistency. 
+                    Our commitment to excellence has earned the trust of generations of customers. 
+                    With strict quality control measures, we deliver refreshing beverages with unmatched reliability.</p>
+                </div>
+                
+                <!-- Research & Innovation -->
+                <div class="bg-white flex flex-col justify-center items-center gap-3 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="./images/research.webp" alt="research">
+                    <h3 class="text-xl font-semibold text-red-500 mb-4">Research & Innovation</h3>
+                    <p class="text-gray-600">We continuously explore new flavors and techniques to enhance our products. 
+                    Our dedicated research team experiments with unique blends to create exciting beverages. 
+                    By adapting to consumer preferences, we introduce innovative and refreshing drinks. 
+                    Our passion for innovation drives us to push boundaries and redefine beverage standards. 
+                    With a balance of tradition and modern trends, we craft flavors that stand out.</p>
+                </div>
+                
+                <!-- State-of-the-Art Facility -->
+                <div class="bg-white flex flex-col justify-center items-center p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="./images/state.webp" alt="state">
+                    <h3 class="text-xl font-semibold text-red-500 mb-4">State-of-the-Art Facility</h3>
+                    <p class="text-gray-600">Goldcup operates with a modern, fully equipped production facility for efficient manufacturing. 
+                    Advanced technology and automation ensure precision in every stage of production. 
+                    Our facility follows strict hygiene protocols, ensuring safe and high-quality beverages. 
+                    We continuously upgrade our infrastructure to meet evolving industry standards. 
+                    With cutting-edge equipment, we deliver freshness and excellence in every bottle.</p>
+                </div>
             </div>
-
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
-                <img src="./images/p5.png" alt="Product 5" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
-                <h3 class="text-xl font-semibold mt-4">Clear Lemon</h3>
-                <p class="text-gray-400 mt-2">Refreshing and zesty lemon burst!</p>
+        </div>
+    </section>
+    <!-- vision -->
+    <section class="bg-gray-900 text-white py-16 px-6 md:px-12 lg:px-20">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-[#F16C27] mb-4" data-aos="fade-up">Our Vision 2035</h2>
+            <p class="text-lg text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="200">
+                Striving towards a future where excellence meets innovation, ensuring quality and sustainability in every sip.
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Sustainability -->
+            <div class="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition transform" data-aos="fade-right">
+                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-3">Sustainability</h3>
+                <p class="text-gray-300">We aim to implement eco-friendly production techniques, reducing waste and embracing renewable energy sources.</p>
             </div>
-
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
-                <img src="./images/p6.png" alt="Product 6" class=" h-56 ml-36 object-cover  rounded-lg transition-transform duration-500">
-                <h3 class="text-xl font-semibold mt-4">Mixture Fruit</h3>
-                <p class="text-gray-400 mt-2">A delightful blend of assorted fruits!</p>
+    
+            <!-- Global Reach -->
+            <div class="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition transform" data-aos="fade-up">
+                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-3">Global Reach</h3>
+                <p class="text-gray-300">Expanding our footprint across international markets while maintaining the authentic taste and quality we are known for.</p>
             </div>
-
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
-                <img src="./images/p7.png" alt="Product 7" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
-                <h3 class="text-xl font-semibold mt-4">Clear Lemon green</h3>
-                <p class="text-gray-400 mt-2">A zesty and refreshing lemon-lime drink!</p>
-            </div>
-
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
-                <img src="./images/p8.png" alt="Product 8" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
-                <h3 class="text-xl font-semibold mt-4">Soda</h3>
-                <p class="text-gray-400 mt-2">Crisp, fizzy, and ultra-refreshing soda!</p>
-            </div>
-
-            <div data-aos="flip-right" data-aos-duration="2000" class="product-card1  p-4 rounded-lg shadow-lg transform transition duration-500 hover:shadow-xl">
-                <img src="./images/p9.png" alt="Product 9" class=" h-56 ml-36 object-cover rounded-lg transition-transform duration-500">
-                <h3 class="text-xl font-semibold mt-4">Lemon Salt Soda</h3>
-                <p class="text-gray-400 mt-2">Tangy, fizzy, and perfectly refreshing lemon salt soda!</p>
+    
+            <!-- Innovation -->
+            <div class="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition transform" data-aos="fade-left">
+                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-3">Innovation</h3>
+                <p class="text-gray-300">Investing in advanced technology and research to craft new, refreshing beverages tailored for the future.</p>
             </div>
         </div>
     </section>
