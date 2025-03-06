@@ -27,17 +27,6 @@
             position: relative;
             overflow: hidden;
         }
-        .moving-image {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: moveLeftRight 3s infinite alternate ease-in-out;
-        }
-        @keyframes moveLeftRight {
-            0% { transform: translate(-50%, -50%) translateX(-10px); }
-            100% { transform: translate(-50%, -50%) translateX(10px); }
-        }
         /* Wave-like entrance animation */
         .product-card {
             opacity: 0;
@@ -92,22 +81,18 @@
             <div class="slider flex">
                 <div class="slide relative bg-red-600 ">
                     <img src="./images/1.png" class="ml-10 md:ml-96 "  alt="Slide 1">
-                    <img src="./images/s1.png" class="moving-image" alt="Overlay Image">
                     <h2 class=" hidden md:flex absolute top-60 right-20 text-black text-4xl font-bold"><span class="text-white" >Pure</span>, refreshing apple bliss!</h2>
                 </div>
                 <div class="slide relative bg-yellow-400 ">
-                    <img src="./images/2.png" class="ml-10 md:ml-96" alt="Slide 2">
-                    <img src="./images/s2.png" class="moving-image" alt="Overlay Image">
+                    <img src="./images/2.png" class="ml-10 md:ml-76" alt="Slide 2">
                     <h2 class=" hidden md:flex absolute top-60 right-20 text-black text-4xl font-bold">Paneer, Mango and Orange bliss!</h2>
                 </div>
                 <div class="slide relative bg-yellow-500 ">
-                    <img src="./images/3.png" class="ml-10 md:ml-96" alt="Slide 3">
-                    <img src="./images/s3.png" class="moving-image" alt="Overlay Image">
+                    <img src="./images/3.png" class="ml-10 md:ml-76" alt="Slide 3">
                     <h2 class=" hidden md:flex absolute top-60 right-20 text-black text-4xl font-bold">Zesty, refreshing orange burst!</h2>
                 </div>
                 <div class="slide relative bg-green-400 ">
-                    <img src="./images/4.png" class="ml-10 md:ml-96" alt="Slide 4">
-                    <img src="./images/s4.png" class="moving-image" alt="Overlay Image">
+                    <img src="./images/4.png" class="ml-10 md:ml-76" alt="Slide 4">
                     <h2 class=" hidden md:flex absolute top-60 right-20 text-black text-4xl font-bold">Crisp and zesty lemon refreshment!</h2>
                 </div>
             </div>
