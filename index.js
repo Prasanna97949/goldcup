@@ -17,7 +17,7 @@ const navbar = document.getElementById('navbar');
             mobileMenu.classList.toggle('hidden');
         });
 
-// slider
+// slider md
 let currentIndex = 0;
 const slides = document.querySelectorAll(".slide");
 function showSlide(index) {
@@ -34,6 +34,7 @@ function prevSlide() {
     showSlide(currentIndex);
 }
 setInterval(nextSlide, 4000); 
+
 
 // wave animation
 const productCards = document.querySelectorAll(".product-card");
