@@ -46,6 +46,21 @@
         .product-card1:hover img {
             transform:  rotateZ(40deg);
         }
+        /* Carousel animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 18s linear infinite;
+  width: 200%;
+}
     </style>
 </head>
 <body >
@@ -219,6 +234,153 @@
             </div>
         </div>
     </section>
+    <!-- Testimonials -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center text-[#F16C27] mb-12">What Our Customers Say</h2>
+      
+          <div class="relative w-full max-w-4xl mx-auto overflow-hidden">
+            <div class="flex animate-scroll w-[300%]">
+              
+              <!-- Testimonial 1 -->
+              <div class="w-1/3 px-6">
+                <div class="bg-white shadow-lg rounded-lg p-8 transition hover:scale-105 duration-300">
+                  <p class="text-gray-700 italic mb-4">
+                    "Goldcup's apple juice tastes incredibly fresh and pure. I’ve been a fan for years!"
+                  </p>
+                  <div class="flex mb-4">
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-gray-300 text-2xl">★</span>
+                  </div>
+                  <div class="flex items-center">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer 1" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                      <h4 class="text-lg font-bold text-[#36404C]">Priya M</h4>
+                      <p class="text-gray-500">Thanjavur</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Testimonial 2 -->
+              <div class="w-1/3 px-6">
+                <div class="bg-white shadow-lg rounded-lg p-8 transition hover:scale-105 duration-300">
+                  <p class="text-gray-700 italic mb-4">
+                    "Their soda is my absolute favorite! Refreshing and perfectly carbonated."
+                  </p>
+                  <div class="flex mb-4">
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                  </div>
+                  <div class="flex items-center">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer 2" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                      <h4 class="text-lg font-bold text-[#36404C]">Arun K</h4>
+                      <p class="text-gray-500">Vallam</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Testimonial 3 -->
+              <div class="w-1/3 px-6">
+                <div class="bg-white shadow-lg rounded-lg p-8 transition hover:scale-105 duration-300">
+                  <p class="text-gray-700 italic mb-4">
+                    "I love their mango juice—it has the perfect balance of sweetness and tang!"
+                  </p>
+                  <div class="flex mb-4">
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                  </div>
+                  <div class="flex items-center">
+                    <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Customer 3" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                      <h4 class="text-lg font-bold text-[#36404C]">Deepa R</h4>
+                      <p class="text-gray-500">Trichy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 4 -->
+              <div class="w-1/3 px-6">
+                <div class="bg-white shadow-lg rounded-lg p-8 transition hover:scale-105 duration-300">
+                  <p class="text-gray-700 italic mb-4">
+                    "I love their mango juice—it has the perfect balance of sweetness and tang!"
+                  </p>
+                  <div class="flex mb-4">
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-gray-300 text-2xl">★</span>
+                  </div>
+                  <div class="flex items-center">
+                    <img src="https://randomuser.me/api/portraits/women/15.jpg" alt="Customer 3" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                      <h4 class="text-lg font-bold text-[#36404C]">Reka V</h4>
+                      <p class="text-gray-500">Trichy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 5 -->
+              <div class="w-1/3 px-6">
+                <div class="bg-white shadow-lg rounded-lg p-8 transition hover:scale-105 duration-300">
+                  <p class="text-gray-700 italic mb-4">
+                    "I love their mango juice—it has the perfect balance of sweetness and tang!"
+                  </p>
+                  <div class="flex mb-4">
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-gray-300 text-2xl">★</span>
+                  </div>
+                  <div class="flex items-center">
+                    <img src="https://randomuser.me/api/portraits/women/18.jpg" alt="Customer 3" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                      <h4 class="text-lg font-bold text-[#36404C]">Diya D</h4>
+                      <p class="text-gray-500">Trichy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 6 -->
+              <div class="w-1/3 px-6">
+                <div class="bg-white shadow-lg rounded-lg p-8 transition hover:scale-105 duration-300">
+                  <p class="text-gray-700 italic mb-4">
+                    "I love their mango juice—it has the perfect balance of sweetness and tang!"
+                  </p>
+                  <div class="flex mb-4">
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                    <span class="text-[#F16C27] text-2xl">★</span>
+                  </div>
+                  <div class="flex items-center">
+                    <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="Customer 3" class="w-16 h-16 rounded-full mr-4">
+                    <div>
+                      <h4 class="text-lg font-bold text-[#36404C]">Kaviya I</h4>
+                      <p class="text-gray-500">Trichy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>
     <!-- why us -->
     <section class="bg-white px-6 py-16">
         <div class="max-w-7xl mx-auto text-center">

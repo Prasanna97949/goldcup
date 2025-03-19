@@ -54,3 +54,5 @@ const productCards = document.querySelectorAll(".product-card");
 
         window.addEventListener("scroll", handleScroll);
         handleScroll();
+        // testimonials
+        
