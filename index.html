@@ -70,7 +70,7 @@
             <!-- Logo -->
             <img class="h-16 rounded-xl" src="./images/logo.jpeg" alt="logo">
             <!-- Links -->
-            <div class="hidden md:flex space-x-8 text-lg font-semibold text-white">
+            <div class="hidden md:flex space-x-8 text-lg font-semibold text-black">
                 <a href="./index.html" class=" hover:text-red-500 transition">Home</a>
                 <a href="./products.html" class=" hover:text-red-500 transition">Products</a>
                 <a href="./aboutus.html" class=" hover:text-red-500 transition">About Us</a>
@@ -133,38 +133,278 @@
                 <img class="product-card h-32 md:h-56 " src="./images/p9.png"  alt="Product">
         </div>
     </section>
-    <!-- our story -->
-    <section class="relative bg-[#D4AF37] text-white py-20 px-6 overflow-hidden">
-        <div class="absolute inset-0 bg-[url('/path-to-background.jpg')] bg-cover bg-center opacity-20"></div>
-        
-        <div class="relative  max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold text-[#00509E] mb-6" data-aos="fade-down">Our Story</h2>
-            <p class="text-lg text-gray-800 leading-relaxed max-w-3xl mx-auto" data-aos="fade-up">
-                Founded in <span class="text-[#00509E] font-semibold">1985</span> in <span class="text-[#00509E] font-semibold">Vallam, Thanjavur</span>, GoldCup has been a pioneer in crafting refreshing beverages.
-                From classic <span class="text-[#00509E]">apple juice</span> to traditional <span class="text-[#00509E]">paneer soda</span>,and many more. our journey has been one of passion and quality.
+<!-- product details -->
+<!-- Our Story Section -->
+<section class="py-16 px-6 bg-white">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-10">
+      
+      <!-- Left Image Box -->
+      <div class="w-full md:w-1/2">
+        <div class="bg-gray-100 rounded-xl w-full h-72 md:h-96"><img src="./images/ourstory.avif" alt=""></div>
+      </div>
+  
+      <!-- Right Content -->
+      <div class="w-full md:w-1/2">
+        <p class="text-sm text-yellow-600 font-semibold mb-2">Our Story</p>
+        <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-4">
+          Meet the Juice Crafters<br />
+          Crafting Healthy Delights
+        </h2>
+        <p class="text-gray-600 mb-6">
+          Founded in 1985 in Vallam, Thanjavur, GoldCup has been a pioneer in crafting refreshing beverages.
+          From classic apple juice to traditional pioneer sodanav, our journey has been one of passion and quality.
+        </p>
+        <button class="bg-lime-600 text-white px-6 py-2 rounded-full hover:bg-lime-700 transition duration-300">
+          About us
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Timeline Icons Row -->
+  <section class="py-10 px-6 bg-white">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Item 1 -->
+      <div class="flex items-center space-x-4 text-left">
+        <img src="./images/big.jpg" alt="The Beginning" class="w-16 h-16 rounded-full shadow-md">
+        <div>
+          <h3 class="text-lg font-semibold text-red-600 mb-1">The Beginning</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur in tincidunt</p>
+        </div>
+      </div>
+  
+      <!-- Item 2 -->
+      <div class="flex items-center space-x-4 text-left">
+        <img src="./images/crafting.jpg" alt="Crafting Flavors" class="w-16 h-16 rounded-full shadow-md">
+        <div>
+          <h3 class="text-lg font-semibold text-yellow-600 mb-1">Crafting Flavors</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur in tincidunt</p>
+        </div>
+      </div>
+  
+      <!-- Item 3 -->
+      <div class="flex items-center space-x-4 text-left">
+        <img src="./images/trust.jpg" alt="A Legacy of Trust" class="w-16 h-16 rounded-full shadow-md">
+        <div>
+          <h3 class="text-lg font-semibold text-red-600 mb-1">A Legacy of Trust</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur in tincidunt</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+    <!-- Our Commitment to Excellence -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Legacy of Trust Since 1985</h2>
+          
+          <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-10">
+            
+            <!-- Apple Juice Card -->
+            <div class="group mt-10 relative bg-red-400 rounded-xl shadow-lg px-6 pt-12 pb-6 overflow-visible h-56 transition duration-300 hover:shadow-2xl">
+              <div class="absolute -top-16 left-6 transform -rotate-12 transition-all duration-500 group-hover:-translate-y-4 group-hover:scale-110">
+                <img src="./images/p1.png" alt="Apple Juice" class="w-20 drop-shadow-lg">
+              </div>
+              <div class="absolute bottom-10 left-5 w-14 h-14 bg-white text-red-500 font-bold rounded-full flex flex-col items-center justify-center text-sm shadow-md border-2 border-red-400">
+                ₹10
+                <span class="text-[10px] font-normal">Only</span>
+              </div>
+              <div class="ml-56 pb-20 text-left">
+                <h3 class="text-white text-xl font-bold mb-1">Apple Juice</h3>
+                <p class="text-white text-xs mb-2">120 ml</p>
+                <ul class="text-white text-sm space-y-1">
+                  <li>✓ Natural goodness</li>
+                  <li>✓ Non alcohol</li>
+                  <li>✓ High Vitamin</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Orange Juice Card -->
+            <div class="group mt-10 relative bg-orange-400 rounded-xl shadow-lg px-6 pt-12 pb-6 overflow-visible h-56 transition duration-300 hover:shadow-2xl">
+              <div class="absolute -top-16 left-6 transform -rotate-12 transition-all duration-500 group-hover:-translate-y-4 group-hover:scale-110">
+                <img src="./images/p2.png" alt="Orange Juice" class="w-20 drop-shadow-lg">
+              </div>
+              <div class="absolute bottom-10 left-5 w-14 h-14 bg-white text-orange-500 font-bold rounded-full flex flex-col items-center justify-center text-sm shadow-md border-2 border-orange-400">
+                ₹10
+                <span class="text-[10px] font-normal">Only</span>
+              </div>
+              <div class="ml-56 pb-20 text-left">
+                <h3 class="text-white text-xl font-bold mb-1">Orange Juice</h3>
+                <p class="text-white text-xs mb-2">150 ml</p>
+                <ul class="text-white text-sm space-y-1">
+                  <li>✓ Fresh citrus</li>
+                  <li>✓ Zero sugar</li>
+                  <li>✓ Tangy delight</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Grape Juice Card -->
+            <div class="group mt-10 relative bg-purple-500 rounded-xl shadow-lg px-6 pt-12 pb-6 overflow-visible h-56 transition duration-300 hover:shadow-2xl">
+              <div class="absolute -top-16 left-6 transform -rotate-12 transition-all duration-500 group-hover:-translate-y-4 group-hover:scale-110">
+                <img src="./images/p3.png" alt="Grape Juice" class="w-20 drop-shadow-lg">
+              </div>
+              <div class="absolute bottom-10 left-5 w-14 h-14 bg-white text-purple-600 font-bold rounded-full flex flex-col items-center justify-center text-sm shadow-md border-2 border-purple-500">
+                ₹10
+                <span class="text-[10px] font-normal">Only</span>
+              </div>
+              <div class="ml-56 pb-20 text-left">
+                <h3 class="text-white text-xl font-bold mb-1">Paneer Juice</h3>
+                <p class="text-white text-xs mb-2">180 ml</p>
+                <ul class="text-white text-sm space-y-1">
+                  <li>✓ Rich antioxidants</li>
+                  <li>✓ Sweet & tangy</li>
+                  <li>✓ Fresh from farms</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Lemon Juice Card -->
+            <div class="group mt-10 relative bg-lime-500 rounded-xl shadow-lg px-6 pt-12 pb-6 overflow-visible h-56 transition duration-300 hover:shadow-2xl">
+              <div class="absolute -top-16 left-6 transform -rotate-12 transition-all duration-500 group-hover:-translate-y-4 group-hover:scale-110">
+                <img src="./images/p7.png" alt="Lemon Juice" class="w-20 drop-shadow-lg">
+              </div>
+              <div class="absolute bottom-10 left-5 w-14 h-14 bg-white text-lime-600 font-bold rounded-full flex flex-col items-center justify-center text-sm shadow-md border-2 border-lime-500">
+                ₹10
+                <span class="text-[10px] font-normal">Only</span>
+              </div>
+              <div class="ml-56 pb-20 text-left">
+                <h3 class="text-white text-xl font-bold mb-1">Lemon Juice</h3>
+                <p class="text-white text-xs mb-2">100 ml</p>
+                <ul class="text-white text-sm space-y-1">
+                  <li>✓ Summer refresh</li>
+                  <li>✓ Tangy twist</li>
+                  <li>✓ Boost hydration</li>
+                </ul>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      <!-- vision -->
+      <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-start">
+      
+          <!-- Vision -->
+          <div>
+            <h4 class="text-yellow-500 font-semibold italic mb-2">Our Vision 2035</h4>
+            <p class="text-2xl md:text-3xl font-bold text-gray-900 leading-snug">
+              Striving towards a future where<br />
+              excellence meets innovation,<br />
+              ensuring quality and sustainability<br />
+              in every sip.
             </p>
+          </div>
+      
+          <!-- Mission -->
+          <div class="bg-pink-50 border border-dashed border-yellow-400 p-8 rounded-md">
+            <h4 class="text-yellow-500 font-semibold italic mb-2">Our Mission</h4>
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our mission is to create</h3>
+            <ul class="space-y-4 text-gray-700 font-medium">
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-400 text-xl">✔</span>
+                We are dedicated to using only the freshest
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-400 text-xl">✔</span>
+                We prioritize the well-being of our customers
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-400 text-xl">✔</span>
+                We are committed to sourcing ingredients responsibly
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-400 text-xl">✔</span>
+                We strive to foster a sense of belonging
+              </li>
+            </ul>
+          </div>
+      
         </div>
-        
-        <div class="relative  flex flex-wrap justify-center gap-6 mt-12">
-            <div class="w-96 bg-[#222222] bg-opacity-30 backdrop-blur-lg p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300" data-aos="zoom-in">
-                <img src="./images/big.jpg" alt="Apple Juice" class="w-full h-40 object-cover rounded-md">
-                <h3 class="text-xl font-semibold text-white mt-4">The Beginning</h3>
-                <p class="text-gray-300 text-sm mt-2">Goldcup was established in 1985 in Vallam, Thanjavur, with a dedication to crafting high-quality beverages. Starting as a small unit, they focused on perfecting traditional flavors with strict quality standards. Their soda and fruit-based drinks quickly gained popularity, leading to expansion beyond Thanjavur. Over the years, they introduced a diverse range of beverages, constantly innovating to meet customer preferences. Today, Goldcup remains a trusted name, known for its commitment to taste, purity, and excellence.</p>
-            </div>
+      </section>
+      <!-- why us -->
+      <section class="bg-gradient-to-b from-rose-200 to-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-10 items-center">
             
-            <div class="w-96 bg-[#222222] bg-opacity-30 backdrop-blur-lg p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300" data-aos="zoom-in" data-aos-delay="200">
-                <img src="./images/crafting.jpg" alt="Mango Juice" class="w-full h-40 object-cover rounded-md">
-                <h3 class="text-xl font-semibold text-white mt-4">Crafting Flavors</h3>
-                <p class="text-gray-300 text-sm mt-2">Goldcup takes pride in crafting flavors that capture the essence of natural ingredients. Each beverage is carefully formulated to deliver a refreshing and authentic taste. From rich fruit juices to crisp sodas, their recipes balance tradition and innovation. They use high-quality ingredients to ensure consistency and satisfaction in every sip. With a passion for excellence, Goldcup continues to create flavors that delight generations.</p>
+            <!-- Left Side Text -->
+            <div>
+              <p class="text-yellow-500 text-2xl italic font-semibold mb-4">Why Choose Us?</p>
+              <h2 class="text-4xl font-bold text-gray-900 mb-6 leading-snug">
+                Delivering excellence<br>since 1985
+              </h2>
+              <a href="#" class="inline-block bg-lime-400 hover:bg-lime-500 text-white px-6 py-3 rounded-md font-semibold transition">
+                See more
+              </a>
             </div>
-            
-            <div class="w-96 bg-[#222222] bg-opacity-30 backdrop-blur-lg p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300" data-aos="zoom-in" data-aos-delay="400">
-                <img src="./images/trust.jpg" alt="Soda" class="w-full h-40 object-cover rounded-md">
-                <h3 class="text-xl font-semibold text-white mt-4">A Legacy of Trust</h3>
-                <p class="text-gray-300 text-sm mt-2">Goldcup has built a legacy of trust since its inception in 1985. Their commitment to quality and authenticity has earned the loyalty of customers for decades. By maintaining strict production standards, they ensure every bottle meets expectations. Generations have enjoyed their beverages, making them a household name. With a strong foundation, Goldcup continues to uphold its reputation for excellence.</p>
+      
+            <!-- Right Side Circles -->
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:gap-4 gap-10 items-center">
+              
+              <!-- Item 1 -->
+              <div class="flex flex-col mt-8 items-center">
+                <div class="w-36 h-36  rounded-full overflow-hidden shadow-md">
+                  <img src="./images/Quality.png" alt="Item 1" class="w-full h-full object-cover">
+                </div>
+                <div class="mt-2 w-36 h-12 bg-white border border-yellow-300 shadow-sm rounded-md flex items-center justify-center text-sm text-gray-700 font-medium">
+                  Premium Quality
+                </div>
+              </div>
+      
+              <!-- Item 2 -->
+              <div class="flex flex-col items-center">
+                <div class="w-36 h-36 rounded-full overflow-hidden shadow-md">
+                  <img src="./images/trust1.png" alt="Item 2" class="w-full h-full object-cover">
+                </div>
+                <div class="mt-2 w-36 h-12 bg-white border border-yellow-300 shadow-sm rounded-md flex items-center justify-center text-sm text-gray-700 font-medium">
+                  Trusted Since 1985
+                </div>
+              </div>
+      
+              <!-- Item 3 -->
+              <div class="flex flex-col mt-8 items-center">
+                <div class="w-36 h-36 rounded-full overflow-hidden shadow-md">
+                  <img src="./images/image.png" alt="Item 3" class="object-cover h-full w-full">
+                </div>
+                <div class="mt-2 w-36 h-12 bg-white border border-yellow-300 shadow-sm rounded-md flex items-center justify-center text-sm text-gray-700 font-medium">
+                  Affordable Prices
+                </div>
+              </div>
+      
             </div>
+      
+          </div>
         </div>
-    </section>
+      </section>
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
     <!-- quality,research -->
     <section class="bg-[#222222] py-12 px-6">
         <div class="max-w-7xl mx-auto text-center">
@@ -205,102 +445,9 @@
             </div>
         </div>
     </section>
-    <!-- vision -->
-    <section class="bg-gray-900 text-white py-16 px-6 md:px-12 lg:px-20">
-        <div class="max-w-5xl mx-auto text-center">
-            <h2 class="text-4xl font-bold text-[#F16C27] mb-4" data-aos="fade-up">Our Vision 2035</h2>
-            <p class="text-lg text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="200">
-                Striving towards a future where excellence meets innovation, ensuring quality and sustainability in every sip.
-            </p>
-        </div>
-        
-        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <!-- Sustainability -->
-            <div class="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition transform" data-aos="fade-right">
-                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-3">Sustainability</h3>
-                <p class="text-gray-300">We aim to implement eco-friendly production techniques, reducing waste and embracing renewable energy sources.</p>
-            </div>
-    
-            <!-- Global Reach -->
-            <div class="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition transform" data-aos="fade-up">
-                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-3">Global Reach</h3>
-                <p class="text-gray-300">Expanding our footprint across international markets while maintaining the authentic taste and quality we are known for.</p>
-            </div>
-    
-            <!-- Innovation -->
-            <div class="p-6 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition transform" data-aos="fade-left">
-                <h3 class="text-2xl font-semibold text-[#0FB2E1] mb-3">Innovation</h3>
-                <p class="text-gray-300">Investing in advanced technology and research to craft new, refreshing beverages tailored for the future.</p>
-            </div>
-        </div>
-    </section>
-    <!-- why us -->
-    <section class="bg-[#00509E] px-6 py-16">
-        <div class="max-w-7xl mx-auto text-center">
-          <h2 class="text-3xl font-bold text-[#D4AF37]">Why Choose Us?</h2>
-          <p class="text-gray-100 mt-2">Delivering excellence since 1985</p>
-      
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            
-            <!-- Card 1 -->
-            <div data-aos="zoom-in-up" data-aos-duration="2000" class="p-6 shadow-lg rounded-lg bg-gray-100 hover:bg-red-600 hover:text-white transition transform hover:scale-105">
-              <div class="text-4xl text-red-500 mb-4">
-                ⚡
-              </div>
-              <h3 class="font-bold text-xl">Premium Quality</h3>
-              <p class="text-gray-700 hover:text-white mt-2">We use only the finest ingredients for an authentic taste.</p>
-            </div>
-      
-            <!-- Card 2 -->
-            <div data-aos="zoom-in-up" data-aos-duration="2000" class="p-6 shadow-lg rounded-lg bg-gray-100 hover:bg-red-600 hover:text-white transition transform hover:scale-105">
-              <div class="text-4xl text-red-500 mb-4">
-                🌍
-              </div>
-              <h3 class="font-bold text-xl">Trusted Since 1985</h3>
-              <p class="text-gray-700 hover:text-white mt-2">A legacy of refreshing beverages loved by generations.</p>
-            </div>
-      
-            <!-- Card 3 -->
-            <div data-aos="zoom-in-up" data-aos-duration="2000" class="p-6 shadow-lg rounded-lg bg-gray-100 hover:bg-red-600 hover:text-white transition transform hover:scale-105">
-              <div class="text-4xl text-red-500 mb-4">
-                ✅
-              </div>
-              <h3 class="font-bold text-xl">100% Natural Ingredients</h3>
-              <p class="text-gray-700 hover:text-white mt-2">No artificial flavors, just pure and healthy refreshment.</p>
-            </div>
-      
-            <!-- Card 4 -->
-            <div data-aos="zoom-in-up" data-aos-duration="2000" class="p-6 shadow-lg rounded-lg bg-gray-100 hover:bg-red-600 hover:text-white transition transform hover:scale-105">
-              <div class="text-4xl text-red-500 mb-4">
-                🚀
-              </div>
-              <h3 class="font-bold text-xl">Fast Delivery</h3>
-              <p class="text-gray-700 hover:text-white mt-2">Enjoy our products fresh and fast with our seamless distribution.</p>
-            </div>
-      
-            <!-- Card 5 -->
-            <div data-aos="zoom-in-up" data-aos-duration="2000" class="p-6 shadow-lg rounded-lg bg-gray-100 hover:bg-red-600 hover:text-white transition transform hover:scale-105">
-              <div class="text-4xl text-red-500 mb-4">
-                🏆
-              </div>
-              <h3 class="font-bold text-xl">Award-Winning Taste</h3>
-              <p class="text-gray-700 hover:text-white mt-2">Recognized for excellence in taste and quality.</p>
-            </div>
-      
-            <!-- Card 6 -->
-            <div data-aos="zoom-in-up" data-aos-duration="2000" class="p-6 shadow-lg rounded-lg bg-gray-100 hover:bg-red-600 hover:text-white transition transform hover:scale-105">
-              <div class="text-4xl text-red-500 mb-4">
-                💰
-              </div>
-              <h3 class="font-bold text-xl">Affordable Pricing</h3>
-              <p class="text-gray-700 hover:text-white mt-2">Enjoy premium quality beverages at the best prices.</p>
-            </div>
-      
-          </div>
-        </div>
-      </section>
+
       <!-- footer -->
-      <section id="contact" class="py-6 px-8 bg-[#222222] text-white text-center">
+      <section id="contact" class="py-6 px-8 bg-gradient-to-b from-rose-200 to-white text-black text-center">
         <div class=" flex justify-around items-center flex-wrap gap-10" >
             <div class="flex flex-col justify-center items-center gap-4">
                 <img class="h-28 w-28 rounded-full "  src="./images/logo.jpeg" alt="logo">
@@ -319,11 +466,11 @@
             <div class="text-left">
                 <h2 class="font-bold ">Contact Details</h2>
                 <div class="flex gap-2 items-center mt-1 " >
-                    <i class="fa-solid fa-phone fa-sm" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-phone fa-sm" style="color: #0e0d0d;"></i>
                     <h2>+91 95976 13956</h2>
                 </div>
                 <div class="flex gap-2 items-center mt-1 " >
-                    <h2><i class="fa-solid fa-location-dot fa-sm" style="color: #ffffff;"></i>
+                    <h2><i class="fa-solid fa-location-dot fa-sm" style="color: #0b0b0b;"></i>
                         Gold cup aerated water works
                         <br>SF NO:108/4C,108/4D,
                         <br>VALLAM NORTH SETHI
@@ -333,7 +480,7 @@
                         <br>GSTIN:33AHYPS2786A1ZX</h2>
                  </div>
                <div class="flex gap-2 items-center mt-1 " >
-                <i class="fa-solid fa-envelope fa-sm" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-envelope fa-sm" style="color: #0e0d0d;"></i>
                    <h2>info@goldcup.com</h2>
                </div>
             </div>
@@ -343,9 +490,9 @@
              <div class="flex flex-col gap-8">
                 <h2 class="font-bold">Follow Us On</h2>
                 <div class="flex gap-6">
-                    <a href="https://www.facebook.com/share/1DTATN6o4c/"><i class="fa-brands fa-square-facebook fa-lg" style="color: #ffffff;"></i></a>
-                    <a href="https://www.instagram.com/goldcupbeverage?igsh=MWk2cHpkOXliaXhwaA=="><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
-                    <a href=""><i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i></a>
+                    <a href="https://www.facebook.com/share/1DTATN6o4c/"><i class="fa-brands fa-square-facebook fa-lg" style="color: #360aea;"></i></a>
+                    <a href="https://www.instagram.com/goldcupbeverage?igsh=MWk2cHpkOXliaXhwaA=="><i class="fa-brands fa-instagram fa-lg" style="color: #d92a90;"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp fa-lg" style="color: #15e971;"></i></a>
                 </div>
              </div>
         </div>
