@@ -17,7 +17,7 @@
         
     </style>
 </head>
-<body class="bg-[url('./images/back.jpg')] bg-cover  bg-no-repeat" >
+<body class="bg-[url('./images/back.jpg')] bg-cover bg-no-repeat ">
     <!-- navbar -->
     <nav id="navbar" class="fixed top-0 left-0 w-full z-50 p-4 transition-all duration-300 bg-transparent">
         <div class="container mx-auto flex justify-between items-center">
@@ -47,25 +47,24 @@
 <div class="p-10" ></div>
     <!-- About Us -->
     <!-- Hero Section -->
-    <section class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('./images/about-bg.jpg');">
-        <h1 class="text-5xl font-bold text-black animate-pulse">About Us</h1>
-    </section>
+       
+
     
     <!-- Company History -->
     <section class="container p-10 bg-white/10 backdrop-blur-lg mx-auto my-16 px-6">
-        <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-up">Our Journey</h2>
-        <div class="grid md:grid-cols-2 gap-8">
+        <h2 class="text-4xl font-bold text-left " data-aos="fade-up">About Us</h2>
+        <div class="flex flex-col md:flex-row gap-10 justify-between items-center">
             <div  data-aos="fade-right">
                 <p class="text-lg">Since 1985, we have been crafting premium beverages with a commitment to quality and taste. Over the years, we have expanded our product line, delivering freshness in every sip.</p>
             </div>
             <div data-aos="fade-left">
-                <img src="./images/logo.jpeg" alt="History" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-500">
+                <img src="./images/logo.jpeg" alt="History" class="h-52 w-72  rounded-lg shadow-lg hover:scale-105 transition-transform duration-500">
             </div>
         </div>
     </section>
     
     <!-- Mission & Vision -->
-    <section class="bg-gray-800 py-16">
+    <section class="bg-gray-100 py-16">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-up">Our Mission & Vision</h2>
             <div class="flex flex-col md:flex-row gap-10">
@@ -79,63 +78,65 @@
                 </div>
             </div>
         </div>
+        <hr class="mt-32 text-gray-800">
+        <section class="container bg-white/10 backdrop-blur-lg p-10 mx-auto my-16 px-6">
+            <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-up">Why Choose Us?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 border border-gray-700 rounded-lg hover:bg-red-500 transition-all duration-500" data-aos="fade-up">
+                    <h3 class="text-2xl font-semibold mb-4">Quality Assurance</h3>
+                    <p>We use the finest ingredients to ensure the best taste and quality.</p>
+                </div>
+                <div class="p-6 border border-gray-700 rounded-lg hover:bg-red-500 transition-all duration-500" data-aos="fade-up">
+                    <h3 class="text-2xl font-semibold mb-4">Sustainable Practices</h3>
+                    <p>Committed to eco-friendly processes for a greener future.</p>
+                </div>
+                <div class="p-6 border border-gray-700 rounded-lg hover:bg-red-500 transition-all duration-500" data-aos="fade-up">
+                    <h3 class="text-2xl font-semibold mb-4">Customer Satisfaction</h3>
+                    <p>Your happiness is our priority, and we strive to exceed expectations.</p>
+                </div>
+            </div>
+        </section>
     </section>
     
     <!-- Why Choose Us -->
-    <section class="container bg-white/10 backdrop-blur-lg p-10 mx-auto my-16 px-6">
-        <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-up">Why Choose Us?</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="p-6 border border-gray-700 rounded-lg hover:bg-red-500 transition-all duration-500" data-aos="fade-up">
-                <h3 class="text-2xl font-semibold mb-4">Quality Assurance</h3>
-                <p>We use the finest ingredients to ensure the best taste and quality.</p>
-            </div>
-            <div class="p-6 border border-gray-700 rounded-lg hover:bg-red-500 transition-all duration-500" data-aos="fade-up">
-                <h3 class="text-2xl font-semibold mb-4">Sustainable Practices</h3>
-                <p>Committed to eco-friendly processes for a greener future.</p>
-            </div>
-            <div class="p-6 border border-gray-700 rounded-lg hover:bg-red-500 transition-all duration-500" data-aos="fade-up">
-                <h3 class="text-2xl font-semibold mb-4">Customer Satisfaction</h3>
-                <p>Your happiness is our priority, and we strive to exceed expectations.</p>
-            </div>
-        </div>
-    </section>
+  
       <!-- footer -->
-      <section id="contact" class="py-6 px-8 bg-black text-white text-center">
+      <section id="contact" class="py-6 px-8 bg-gradient-to-b from-rose-200 to-white text-black text-center">
         <div class=" flex justify-around items-center flex-wrap gap-10" >
             <div class="flex flex-col justify-center items-center gap-4">
-                <img class="h-28 w-28 "  src="./images/logo.jpeg" alt="logo">
+                <img class="h-28 w-28 rounded-full "  src="./images/logo.jpeg" alt="logo">
                 <h2>Refreshing the world with  <br> premium-quality beverages since 1985!</h2>
             </div>
             <div class="flex flex-wrap justify-center gap-16 md:gap-32 items-center" >
                 <!-- quick links -->
-                <div class="text-left">
-                    <h2 class="font-bold ">Quick Links</h2>
-                    <h2  class="hover:text-gray-400 cursor-pointer"><a href="./index.html">Home</a></h2>
-                    <h2 class="hover:text-gray-400 cursor-pointer"><a href="./products.html">Products</a></h2>
-                    <h2 class="hover:text-gray-400 cursor-pointer"><a href="./aboutus.html">About Us</a></h2>
-                    <h2 class="hover:text-gray-400 cursor-pointer"><a href="./contactus.html">Contact US</a></h2> 
-                </div>
+            <div class="text-left">
+                <h2 class="font-bold ">Quick Links</h2>
+                <h2  class="hover:text-gray-400 cursor-pointer"><a href="./index.html">Home</a></h2>
+                <h2 class="hover:text-gray-400 cursor-pointer"><a href="./products.html">Products</a></h2>
+                <h2 class="hover:text-gray-400 cursor-pointer"><a href="./aboutus.html">About Us</a></h2>
+                <h2 class="hover:text-gray-400 cursor-pointer"><a href="./contactus.html">Contact US</a></h2> 
+            </div>
             <!-- contact details -->
             <div class="text-left">
                 <h2 class="font-bold ">Contact Details</h2>
                 <div class="flex gap-2 items-center mt-1 " >
-                    <i class="fa-solid fa-phone fa-sm" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-phone fa-sm" style="color: #0e0d0d;"></i>
                     <h2>+91 95976 13956</h2>
                 </div>
-              <div class="flex gap-2 items-center mt-1 " >
-                <h2><i class="fa-solid fa-location-dot fa-sm" style="color: #ffffff;"></i>
-                    Gold cup aerated water works
-                    <br>SF NO:108/4C,108/4D,
-                    <br>VALLAM NORTH SETHI
-                    <br>VALLAM
-                    <br>THANJAVUR-
-                    TAMILNADU -613403
-                    <br>GSTIN:33AHYPS2786A1ZX</h2>
-             </div>
-             <div class="flex gap-2 items-center mt-1 " >
-              <i class="fa-solid fa-envelope fa-sm" style="color: #ffffff;"></i>
-                 <h2>info@goldcup.com</h2>
-             </div>
+                <div class="flex gap-2 items-center mt-1 " >
+                    <h2><i class="fa-solid fa-location-dot fa-sm" style="color: #0b0b0b;"></i>
+                        Gold cup aerated water works
+                        <br>SF NO:108/4C,108/4D,
+                        <br>VALLAM NORTH SETHI
+                        <br>VALLAM
+                        <br>THANJAVUR-
+                        TAMILNADU -613403
+                        <br>GSTIN:33AHYPS2786A1ZX</h2>
+                 </div>
+               <div class="flex gap-2 items-center mt-1 " >
+                <i class="fa-solid fa-envelope fa-sm" style="color: #0e0d0d;"></i>
+                   <h2>info@goldcup.com</h2>
+               </div>
             </div>
             </div>
             
@@ -143,9 +144,9 @@
              <div class="flex flex-col gap-8">
                 <h2 class="font-bold">Follow Us On</h2>
                 <div class="flex gap-6">
-                    <a href="https://www.facebook.com/share/1DTATN6o4c/"><i class="fa-brands fa-square-facebook fa-lg" style="color: #ffffff;"></i></a>
-                    <a href="https://www.instagram.com/goldcupbeverage?igsh=MWk2cHpkOXliaXhwaA=="><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
-                    <a href=""><i class="fa-brands fa-whatsapp fa-lg" style="color: #ffffff;"></i></a>
+                    <a href="https://www.facebook.com/share/1DTATN6o4c/"><i class="fa-brands fa-square-facebook fa-lg" style="color: #360aea;"></i></a>
+                    <a href="https://www.instagram.com/goldcupbeverage?igsh=MWk2cHpkOXliaXhwaA=="><i class="fa-brands fa-instagram fa-lg" style="color: #d92a90;"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp fa-lg" style="color: #15e971;"></i></a>
                 </div>
              </div>
         </div>
